@@ -1,2 +1,4 @@
 vue.config.js
 public
+dist
+statics

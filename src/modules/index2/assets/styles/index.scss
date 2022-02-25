@@ -1,0 +1,31 @@
+@import './sprites.scss';
+
+@mixin spritesRewrite($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    $sprite-hover-name: #{$sprite-name}_hover;
+
+    .icon-#{$sprite-name} {
+      @include sprite($sprite);
+
+      @if variable-exists($sprite-hover-name) {
+        &:not(.disabledIcon):hover,
+        span:hover &,
+        &.active,
+        a:hover:not(.disabledBtn) & {
+          @extend .icon-#{$sprite-hover-name};
+        }
+      }
+    }
+  }
+}
+
+@include spritesRewrite($spritesheet-sprites);
+
+body {
+  min-height: 100%;
+}
+
+#app {
+  height: 100%;
+}
