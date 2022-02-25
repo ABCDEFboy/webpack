@@ -1,0 +1,7 @@
+dist/
+node_modules/
+src/assets/sprites/
+deploy
+public
+statics
+src/assets/ava-ui/theme/
