@@ -79,10 +79,8 @@ mark,
 audio,
 video,
 input {
-  margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
+  margin: 0;
   font-family:
     Source Han Sans CN,
     Helvetica Neue,
@@ -92,8 +90,10 @@ input {
     Microsoft YaHei,
     SimSun,
     sans-serif;
+  font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
+  border: 0;
 }
 
 article,
@@ -125,8 +125,8 @@ q::after {
 }
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 input,
